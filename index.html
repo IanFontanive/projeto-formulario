@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="tiulo"> 
+        <h1>FreePunchCamp Enquete </h1>
+        <h2>Obrigado por compartilhar seu conhecimento e experiência com a comunidade</h2>
+    </div>
+    <main>
+        <form action="enquete.php" method="post">
+            <div class="campo">
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" placeholder="nome completo" minlength="6" maxlength="30" required>
+            </div>
+            <div class="campo">
+                <label for="inick">Nickname</label>
+                <input type="text" name="nick name" id="inick" placeholder="Seu nome de Jogador" maxlength="20" required>
+            </div>
+            <div class="campo">
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" placeholder="Seu e-mail" maxlength="11" required>
+            </div>
+            <div class="campo">
+                <label for="iidade">Idade</label>
+                <input type="number" name="idade" id="iidade" min="12" max="99" placeholder="Sua idade" required>
+            </div>
+            <div class="campo">
+                <p>Selecione a opção que melhor corresponde ao seu perfil</p>
+                <Select name="perfil" id="lista" required>
+                    <option disabled selected value>Selecione seu perfil</option>
+                    <option value="Iniciante">Iniciante</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Entusiasta">Entusiasta</option>
+                    <option value="Semi-pro">Semi-pro</option>
+                    <option value="Pro-player">Pro-player</Pro-player></option>
+                </Select>
+            </div>
+            <div class="campo">
+                <p>Onde você conheceu a FreePunchCamp?</p>
+                <input type="radio" value="Amigos" name="contatocom">Amigos</label>
+                <input type="radio" value="Outros jogadores" name="contatocom">Outros jogadores</label>
+                <input type="radio" value="Comunidade" name="contatocom">Comunidade</label>
+                <input type="radio" value="Outro" name="contatocom">Outro</label>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
