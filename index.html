@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Form</title>
 </head>
 <body>
     <div id="tiulo"> 
-        <h1>FreePunchCamp Enquete </h1>
+        <h1>FreePunchCamp Enquete</h1>
         <h2>Obrigado por compartilhar seu conhecimento e experiência com a comunidade</h2>
     </div>
     <main>
@@ -30,7 +30,7 @@
             </div>
             <div class="campo">
                 <p>Selecione a opção que melhor corresponde ao seu perfil</p>
-                <Select name="perfil" id="lista" required>
+                <Select name="perfil" required>
                     <option disabled selected value>Selecione seu perfil</option>
                     <option value="Iniciante">Iniciante</option>
                     <option value="Casual">Casual</option>
@@ -41,10 +41,42 @@
             </div>
             <div class="campo">
                 <p>Onde você conheceu a FreePunchCamp?</p>
-                <input type="radio" value="Amigos" name="contatocom">Amigos</label>
-                <input type="radio" value="Outros jogadores" name="contatocom">Outros jogadores</label>
-                <input type="radio" value="Comunidade" name="contatocom">Comunidade</label>
-                <input type="radio" value="Outro" name="contatocom">Outro</label>
+                <input type="radio" id="iamigos" value="Amigos" name="contatocom"><label for="iamigos">Amigos</label></label>
+                <input type="radio" id="ijogadores" value="Outros jogadores" name="contatocom"><label for="ijogadores">Outros jogadores</label></label>
+                <input type="radio" id="icomunidade" value="Comunidade" name="contatocom"><label for="icomunidade">Comunidade</label></label>
+                <input type="radio" id="ioutro" value="Outro" name="contatocom"><label for="ioutro">Outro</label></label>
+            </div>
+            <div class="campo">
+                <p>Qual a sua franquia favorita?</p>
+                <select name="franquia" required>
+                    <option disabled selected value>Selecione uma franquia</option>
+                    <option value="The King of Fighters">The King of Fighters</option>
+                    <option value="Street Fighter">Street Fighter</option>
+                    <option value="Mortal Kombat">Mortal Kombat</option>
+                    <option value="Tekken">Tekken</option>
+                    <option value="Dragon Ball">Dragon Ball</option>
+                    <option value="Darkstalkers">Darkstalkers</option>
+                    <option value="Guilty Gear">Guilty Gear</option>
+                    <option value="Marvel vs Capcom">Marvel vs Capcom</option>
+                    <option value="">Super Smash Bros</option>
+                    <option value="MultiVersus">MultiVersus</option>
+                    <option value="Outra Franquia">Outra Franquia</option>
+                </select>
+            </div>
+            <div class="campo">
+                <p>Quais categorias de torneios você gostaria de ver ou participar?</p>
+                <label for="iescalada"><input type="checkbox" name="escalada" id="iescalada">Escalada</label>
+                <label for="imata"><input type="checkbox" name="mata-mata" id="imata">Mata-mata</label>
+                <label for="iduplas"><input type="checkbox" name="Duplas" id="iduplas">Duplas</label>
+                <label for="iduplasdi"><input type="checkbox" name="duplas-dinamicas" id="iduplasdi">Duplas dinâmicas</label>
+                <label for="ichaves"><input type="checkbox" name="chaves" id="ichaves">Chaves com pre-seleção</label>
+                <label for="ichavesran"><input type="checkbox" name="chaves-randomicas" id="ichavesran">Chaves randomicas</label>
+            </div>
+            <div class="campo">
+                <label for="comentarios">
+                    <p>Comentarios e Sugestões</p>
+                </label> 
+                <textarea id="comentarios" name="comentarios-sugestoes" placeholder="Deixe seu comentário aqui..." minlength="5" maxlength="200"></textarea>
             </div>
         </form>
     </main>
