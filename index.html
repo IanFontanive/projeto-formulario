@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Form</title>
 </head>
 <body>
-    <div id="tiulo"> 
-        <h1>FreePunchCamp Enquete</h1>
-        <h2>Obrigado por compartilhar seu conhecimento e experiência com a comunidade</h2>
+    <div id="titulo"> 
+        <h1>freePunchCamp Enquete</h1>
+        <h2>Obrigado por compartilhar seu conhecimento e experiência com a comunidade !</h2>
     </div>
     <main>
         <form action="enquete.php" method="post">
@@ -28,7 +29,7 @@
                 <label for="iidade">Idade</label>
                 <input type="number" name="idade" id="iidade" min="12" max="99" placeholder="Sua idade" required>
             </div>
-            <div class="campo">
+            <div class="select">
                 <p>Selecione a opção que melhor corresponde ao seu perfil</p>
                 <Select name="perfil" required>
                     <option disabled selected value>Selecione seu perfil</option>
@@ -39,7 +40,7 @@
                     <option value="Pro-player">Pro-player</Pro-player></option>
                 </Select>
             </div>
-            <div class="campo">
+            <div class="select">
                 <p>Onde você conheceu a FreePunchCamp?</p>
                 <input type="radio" id="iamigos" value="Amigos" name="contatocom"><label for="iamigos">Amigos</label></label>
                 <input type="radio" id="ijogadores" value="Outros jogadores" name="contatocom"><label for="ijogadores">Outros jogadores</label></label>
@@ -73,9 +74,7 @@
                 <label for="ichavesran"><input type="checkbox" name="chaves-randomicas" id="ichavesran">Chaves randomicas</label>
             </div>
             <div class="campo">
-                <label for="comentarios">
-                    <p>Comentarios e Sugestões</p>
-                </label> 
+                <p>Comentarios e Sugestões</p>
                 <textarea id="comentarios" name="comentarios-sugestoes" placeholder="Deixe seu comentário aqui..." minlength="5" maxlength="200"></textarea>
             </div>
         </form>
